@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Labs</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-512.png" type="image/png">
+    <meta name="theme-color" content="#8B5CF6">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('Service Worker registrado!'))
+          .catch(err => console.error('Erro ao registrar o Service Worker:', err));
+      }
+    </script>
+</head>
+<body>
+    <h1>Event Labs</h1>
+    <p>Seu app está funcionando como PWA.</p>
+</body>
+</html>
